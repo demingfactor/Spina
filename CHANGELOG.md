@@ -1,6 +1,17 @@
 # Spina CMS Changelog
 
+## 2.10
+
+### 2.10.0 (April 6th, 2022)
+* Added support for replacing images/attachments in the media library
+* Fixed bug for repeater UI
+
 ## 2.9
+
+### 2.9.1 (March 30th, 2022)
+* Fixed bug with attachment uploads
+* Refactored order options for Spina::Resource
+* Updated locales
 
 ### 2.9.0 (March 15th, 2022)
 * Added translatable slugs for resources
