@@ -52,6 +52,7 @@ Spina::Engine.routes.draw do
       resource :move, controller: "move_pages"
 
       post :sort, on: :collection
+      post :sort_one, on: :member
     end
     resources :page_translations, only: [:destroy]
     resources :parent_pages
@@ -59,7 +60,7 @@ Spina::Engine.routes.draw do
 
     resources :resources, only: [:show, :edit, :update]
 
-    resources :navigations do
+    resources :navigations, only: [:index, :edit, :update] do
       post :sort, on: :member
       resources :navigation_items
     end
